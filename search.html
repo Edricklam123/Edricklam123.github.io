@@ -16,10 +16,10 @@
     <div data-datacamp-exercise data-lang="r">
         <code data-type="pre-exercise-code">
                     library(googlesheets)
-                    data <- gs_read(gs_url("https://docs.google.com/spreadsheets/d/1ufuzTL9VCxdvX1QeFQcMGxYbEMq1ZEWVht3CEDpXBmc/edit?usp=sharing"))
+                    data <- gs_read(gs_url("https://docs.google.com/spreadsheets/d/1teHdq65MOFwcK2KVkmicbvieG--sB69Yxea1ZX4eDbo/edit?usp=sharing"))
         
                     data <- as.data.frame(data)
-                    colnames(data) <- c("DateTime", "Token", "Score")
+                    colnames(data) <- c("DateTime", "Token", "Feedback")
                     data <- data[which(!is.na(data$DateTime)),]
                     score <- function(token) {
                         i <- which(data$Token==token)
@@ -27,7 +27,7 @@
                     }
                 </code>
         <code data-type="sample-code">
-                    # Put Token in "". Ex: score("abcde123")
+                    # Put Token in "". Ex: score("BestTop123")
                     score("Copy this line and Replace this sentence with your token!")
                 </code>
     </div>
