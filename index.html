@@ -11,22 +11,30 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="./style.css">
     <!--   bootstrap   -->
-    <title>表單分數即時回饋</title>
+    <title>BestTop Psychometric Test</title>
 </head>
 
 <body>
     <div class="container">
 
-        <h1 class="title">表單分數即時回饋</h1>
+        <h1 class="title">BestTop Psychometric Test - Personal Quality - Emotional Intelligence</h1>
 
         <div class="intro">
-            <p>此為 google 表單分數即時回饋的示範平台，請先點選下方「填寫表單」以填寫問卷，問卷最後會要求你輸入 <b>Token</b>, 此 <b>Token</b> 是用來查詢問卷分數的，請將其記下。
-            </p>
+            <p>
+		Click into the following button and answer questions related to your behaviours, at the end of the test	
+		you are going to be required to provide an unique token for retrieving report. Please do no include your
+		personal information in the token.
+	    </p>
+            <p>
+		When retrieving report:
+		kindly copy the 'score("")' line and enter your personal token to to retrieve the data.
+	    </p>
+		
         </div>
 
         <!-- Button trigger modal: gsheet -->
         <button type="button" class="btn btn-success" data-toggle="modal" data-target="#gsheet">
-            填寫表單
+            Start the test
             </button>
 
 
@@ -55,14 +63,14 @@
         <div>
             <p>以下按鈕是 DataCamp Light, 為輔助程式語言教學與學習的工具，可在其中執行 code。</p>
             
-            <p>開啟後 DataCamp Light 已預先讀入資料。您僅需於<code>score()</code>中輸入金鑰。<br>例如，若您於問卷中 Token 那題填寫「abcde123」，請輸入<code>score("abcde123")</code>。若查無結果，請按查詢視窗右下方<b>Reload</b>按鈕。
+            <p>You only have to copy and enter your personal token between the quotation mark in <code>score()</code>。<br>For example, your token is 「BestTopEg」，please enter <code>score("BestTopEg")</code> in the console。Press the <b>Reload</b> button at the bottom right corner if the system returns no result。
             </p>
         </div>
 
 
         <!-- Button trigger modal: search -->
         <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#search">
-            查詢結果
+            Retrieve Result
             </button>
 
         <!-- Modal: search -->
